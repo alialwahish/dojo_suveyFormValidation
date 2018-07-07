@@ -1,0 +1,26 @@
+﻿@using MvcDojSurv.Models
+@model Ninja
+
+
+
+<form asp-action="create" asp-controller="Home" method="POST">
+<span asp-validation-for="Name" > </span>
+<label asp-for="Name">Name:
+    <input asp-for="Name">
+
+<span asp-validation-for="Location" > </span>
+<label asp-for="Location">Location:
+    <input asp-for="Location">
+
+    <span asp-validation-for="Language" > </span>
+<label asp-for="Language">Language:
+    <input asp-for="Language">
+  <span asp-validation-for="Comment" > </span>
+<label asp-for="Comment">Comment:
+    <input asp-for="Comment">
+
+<input value="Add Ninja" type="submit">
+
+
+</label></label></label></label>
+</form>
